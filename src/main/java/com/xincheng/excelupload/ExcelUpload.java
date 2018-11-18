@@ -35,6 +35,8 @@ public class ExcelUpload {
         LOGGER.info("文件上传了");
         ResultObject resultObject = userService.uploadExcel(file);
 
+        LOGGER.info("打印信息");
+
         return resultObject;
     }
 
