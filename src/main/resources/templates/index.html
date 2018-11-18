@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>上传excel文件</title>
+</head>
+<script th:src="@{|/jquery-1.4.4.min.js|}"></script>
+
+<body>
+    <form th:action="@{|/excelUpload|}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <button id="uploadFile">上传</button>
+    </form>
+</body>
+</html>
