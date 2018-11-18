@@ -136,7 +136,7 @@ public class UserServiceImpl implements UserService {
                 resultObject.setMessage("上传文件成功");
             }
 
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
             LOGGER.error("异常情况："+e.getMessage());
         } finally {
